@@ -1,0 +1,22 @@
+# Ejecutable final
+mash
+
+# Directorios de compilación
+build/
+obj/
+bin/
+
+# Archivos objeto y librerías
+*.o
+*.a
+*.so
+
+# Temporales de editores
+*.swp
+*~
+.vscode/
+.idea/
+
+# Logs y basura del sistema
+*.log
+.DS_Store
