@@ -36,8 +36,8 @@ void main_loop(char *buffer, char **args) {
         if (pid == 0) {
             write(1, "\n", 1);
             execvp(args[0], args);
-            write(2, MSG_ERROR, MSG_ERROR_SIZE);
-            _exit(1); 
+
+            write(2, MSG_ERROR, MSG_ERROR_SIZE); 
         } else {
             wait(NULL);
             for (int j = 0; j < ARGS_SIZE; j++) args[j] = NULL;
